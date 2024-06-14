@@ -17,8 +17,7 @@ class SingleSMS {
   ): Promise<string | {}> {
     try {
       const basePath: string = `/v${option.apiVersion}`;
-      let {templateValues, ...body} = request;
-      if(!templateValues) templateValues = {}
+      const { templateValues, ...body } = request;
       const response = await this._httpClient.post(`${basePath}/sms/send`, {...body, ...templateValues});
       const arifAPIResponse = response.data as GeezSMSAPIResponse<string>;
       return arifAPIResponse.msg;

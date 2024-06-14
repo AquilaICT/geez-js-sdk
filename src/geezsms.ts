@@ -22,7 +22,7 @@ class GeezSMS {
       },
     });
     this.single = new SingleSMS(this._httpClient);
-    //TODO: add bulk support and otp support
+    // TODO: add bulk support and otp support
     // this.bulk = new BulkSMS(this._httpClient);
   }
 }

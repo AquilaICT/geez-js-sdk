@@ -2,6 +2,13 @@
 
 # GeezSMS Node.js Library
 
+[![npm version](https://img.shields.io/npm/v/geezsms.svg?style=flat-square)](https://www.npmjs.com/package/geezsms)
+[![npm downloads](https://img.shields.io/npm/dm/geezsms.svg?style=flat-square)](https://www.npmjs.com/package/geezsms)
+[![npm total downloads](https://img.shields.io/npm/dt/geezsms.svg?style=flat-square)](https://www.npmjs.com/package/geezsms)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/aquilaict/geez-js-sdk/Tests/main?label=tests&style=flat-square)](https://github.com/aquilaict/geez-js-sdk/actions?query=workflow%3ATests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/aquilaict/geez-js-sdk/Code%20Style/main?label=code%20style&style=flat-square)](https://github.com/aquilaict/geez-js-sdk/actions?query=workflow%3A"Code+Style"+branch%3Amain)
+
+
 The GeezSMS Node.js library offers a convenient way to integrate SMS functionalities into applications written in server-side JavaScript, focusing on sending SMS messages.
 
 ## Documentation

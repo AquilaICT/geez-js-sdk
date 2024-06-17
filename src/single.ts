@@ -3,7 +3,7 @@ import GeezSMSBadRequestException from './exceptions/APIBadRequestException';
 import GeezSMSUnAuthorizedException from './exceptions/APIUnauthorized';
 import GeezSMSException from './exceptions/geezsmsexception';
 import GeezSMSNetworkException from './exceptions/geezsmsnetworkexception';
-import GeezSMSAPIResponse from './interface/geezsmsapiresponse';
+import GeezSMSAPIResponse, { GeezSuccesReponse } from './interface/geezsmsapiresponse';
 
 class SingleSMS {
   _httpClient: AxiosInstance;
@@ -19,8 +19,8 @@ class SingleSMS {
       const basePath: string = `/v${option.apiVersion}`;
       const { templateValues, ...body } = request;
       const response = await this._httpClient.post(`${basePath}/sms/send`, {...body, ...templateValues});
-      const arifAPIResponse = response.data as GeezSMSAPIResponse<string>;
-      return arifAPIResponse.msg;
+      const arifAPIResponse = response.data as GeezSMSAPIResponse<GeezSuccesReponse>;
+      return arifAPIResponse;
     } catch (error) {
       this.__handleException(error);
       throw error;

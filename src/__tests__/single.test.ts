@@ -21,7 +21,7 @@ describe('GeezSMS Checkout', () => {
   test('Check API key is Invalid', async () => {
     try {
       const geezsms = new GeezSMS('myAPI');
-      await geezsms.single.send({msg: 'must fail', phone: '251961186323'});
+      await geezsms.single.send({msg: 'must fail', phone: process.env.phone || ''});
     } catch (err) {
       expect(err).toBeInstanceOf(GeezSMSBadRequestException);
     }

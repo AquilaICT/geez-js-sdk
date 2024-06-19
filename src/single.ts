@@ -14,7 +14,7 @@ class SingleSMS {
   async send(
     request: SingleSMSRequest,
     option: SmsOption = { sandbox: false, apiVersion: 1},
-  ): Promise<string | {}> {
+  ): Promise<GeezSMSAPIResponse<GeezSuccesReponse>> {
     try {
       const basePath: string = `/v${option.apiVersion}`;
       const { templateValues, ...body } = request;

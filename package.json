@@ -1,6 +1,6 @@
 {
   "name": "geezsms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GeezSMS Typscript wrapper.",
   "main": "lib/geezsms.js",
   "types": "lib/geezsms.d.ts",

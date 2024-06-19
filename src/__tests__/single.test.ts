@@ -16,7 +16,7 @@ describe('GeezSMS Checkout', () => {
       callback: "https://webhook.site/bce0de92-88fc-461d-b108-cab62bce9d5f"
     };
     let session = await geezsms.single.send(data);
-    expect(session).toBe('SMS_SENT_SUCCSSFULLY');
+    expect(session.msg).toBe('SMS_SENT_SUCCSSFULLY');
   });
   test('Check API key is Invalid', async () => {
     try {

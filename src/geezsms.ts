@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from 'axios';
 import SingleSMS from './single';
 
 class GeezSMS {
-  DEFAULT_HOST: string = 'http://sandbox.api.geezsms.com/api';
+  DEFAULT_HOST: string = 'https://api.geezsms.com/api';
   PACKAGE_VERSION: string = '1.0.0';
   DEFAULT_TIMEOUT: number = 1000 * 60 * 2;
 

@@ -47,7 +47,7 @@ export interface SingleSMSRequest {
   msg: string;
   shortcode_id?: string;
   callback?: string;
-  sender_id?: string[];
+  sender_id?: string | number;
   template?: boolean;
   templateValues?: { [key: string]: string };
 }
